@@ -152,6 +152,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TemplateTemplateParameter.hpp" />
+    <ClInclude Include="TupleTest.hpp" />
     <ClInclude Include="TypeAlias.hpp" />
     <ClInclude Include="VariadicTemplates.hpp" />
   </ItemGroup>
