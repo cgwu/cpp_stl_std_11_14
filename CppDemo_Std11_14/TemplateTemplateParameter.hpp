@@ -42,17 +42,10 @@ public:
 };
 
 
-template<typename T>
-using Vec = vector<T, allocator<T>>;
-
-template<typename T>
-using Lst = list<T, allocator<T>>;
-
 void TemplateTemplateParameter() {
-
 	TTPCls<int, Vec> vec1;
 	vec1.PrintContainer();
 	TTPCls<double, Lst> lst1;
 	lst1.PrintContainer();
-	std::cout << std::endl;
+	cout << endl << endl;
 }

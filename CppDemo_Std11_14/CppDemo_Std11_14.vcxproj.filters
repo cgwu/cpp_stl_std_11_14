@@ -33,6 +33,9 @@
     <ClInclude Include="TypeAlias.hpp">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="MyString.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
