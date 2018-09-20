@@ -39,6 +39,12 @@
     <ClInclude Include="TupleTest.hpp">
       <Filter>源文件</Filter>
     </ClInclude>
+    <ClInclude Include="DecltypeTest.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LambdaTest.hpp">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
