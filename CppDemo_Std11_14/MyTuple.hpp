@@ -15,7 +15,7 @@ protected:
 	Head m_head;
 public:
 	MyTuple() {}
-	MyTuple(Head v, Tail... vtail)
+	MyTuple(const Head& v, const Tail&... vtail)
 		:m_head(v), inherated(vtail...) {}
 
 	Head head() { return m_head; }
@@ -24,7 +24,7 @@ public:
 };
 
 void MyTupleTest() {
-	MyTuple<int, float, string> t(41, 6.3f, "Nice!");
+	MyTuple<int, float, string> t(41, 6.3f, "const Nice!");
 	cout << "sizeof MyTuple:"<< sizeof(t) << endl;
 	cout << t.head() << endl;
 	cout << t.tail().head() << endl;

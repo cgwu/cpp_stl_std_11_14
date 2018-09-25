@@ -59,5 +59,8 @@
     <ClCompile Include="CppDemo_Std11_14.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="STL_Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

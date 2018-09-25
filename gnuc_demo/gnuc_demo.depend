@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1537894310 source:k:\workspace\vs2017\cppdemo_std11_14\gnuc_demo\test_accumulate.cpp
+	<iostream>
+
+1537895998 source:k:\workspace\vs2017\cppdemo_std11_14\gnuc_demo\main.cpp
+	<iostream>
+	"accumulate.h"
+	"foreach.h"
+
+1537894310 k:\workspace\vs2017\cppdemo_std11_14\gnuc_demo\test_accumulate.cpp
+	<iostream>
+
+1537895430 k:\workspace\vs2017\cppdemo_std11_14\gnuc_demo\accumulate.h
+	<iostream>
+	<functional>
+	<numeric>
+
+1537896830 k:\workspace\vs2017\cppdemo_std11_14\gnuc_demo\foreach.h
+	<iostream>
+	<algorithm>
+	<vector>
+
