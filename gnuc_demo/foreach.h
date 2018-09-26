@@ -57,6 +57,40 @@ void test_foreach()
     auto fresult = find(vi.begin(), vi.end(), 60);
     if(fresult == vi.end()) cout << " Not found" <<endl;
     else cout << *fresult << endl;
+
+    cout << "排序:" <<endl;
+    sort(vi.begin(),vi.end());
+     for(auto e: vi)
+    {
+        cout << ' ' << e;
+    }
+    cout <<endl;
+    // 排序: 30 60 60 90
+    auto lower = std::lower_bound(vi.begin(),vi.end(),60);
+    cout << "lower:" << *--lower <<endl;    //30
+    auto upper = std::upper_bound(vi.begin(),vi.end(),60);
+    cout << "upper:" << *upper <<endl;      //90
+
+    cout << "反向排序:" <<endl;
+    sort(vi.rbegin(),vi.rend());
+     for(auto e: vi)
+    {
+        cout << ' ' << e;
+    }
+    cout <<endl;
+
+    vi.push_back(999);
+    sort(vi.begin(),vi.end(),greater<int>());
+    for(auto e: vi)
+    {
+        cout << ' ' << e;
+    }
+    cout <<endl;
+
+    using namespace std::placeholders;
+    // #! not1, bind2nd, less.
+    cout << count_if(vi.begin(), vi.end(), not1(bind2nd(less<int>(),60))) <<endl;
+    cout << count_if(vi.begin(), vi.end(), bind(less_equal<int>(),_1,60)) <<endl;
 }
 
 }
